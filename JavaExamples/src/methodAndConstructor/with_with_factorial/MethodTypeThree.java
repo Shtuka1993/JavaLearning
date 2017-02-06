@@ -1,0 +1,27 @@
+package methodAndConstructor.with_with_factorial;
+
+public class MethodTypeThree {
+
+    public static void main(String[] args) {
+        A4 ob1 = new A4();
+        //print type 1
+        double ans = ob1.factorial(5);
+        System.out.println(ans);
+
+        //print type 2
+        System.out.println(ob1.factorial(5));
+    }
+
+}
+
+class A4{
+    double factorial(int a){
+        double fact = 1;
+        for(int i=1;i<=a;i++){
+            fact = fact*i;
+        }
+        System.out.println("With return-type with argument");
+        System.out.println("Reeived:int var1="+a);
+        return fact;
+    }
+}

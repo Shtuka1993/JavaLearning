@@ -1,0 +1,21 @@
+package methodAndConstructor.with_without;
+
+public class MethodTypeFour {
+    public static void main(String[] args) {
+        A5 ob1 = new A5();
+
+        //print type 1
+        double ans = ob1.getpi();
+        System.out.println(ans);
+
+        //print type 2
+        System.out.println(ob1.getpi());
+    }
+}
+
+class A5{
+    double getpi(){
+        System.out.println("With return-type without argument");
+        return Math.PI;
+    }
+}

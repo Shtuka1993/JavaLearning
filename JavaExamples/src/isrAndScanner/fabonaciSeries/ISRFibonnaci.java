@@ -1,0 +1,32 @@
+package isrAndScanner.fabonaciSeries;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+
+public class ISRFibonnaci {
+
+    public static void main(String[] args) throws IOException {
+
+        InputStreamReader isr = new InputStreamReader(System.in);
+        BufferedReader br = new BufferedReader(isr);
+        String s1;
+        System.out.println("Enter the range:");
+        s1 = br.readLine();
+        int n1 = Integer.parseInt(s1);
+
+        int m,n,i,temp=0;
+        m=1;
+        n=2;
+        System.out.println("The fibonnaci series is:");
+        System.out.println(m+" "+n);
+        for(i=1;i<=n1;i++){
+            temp = m+n;
+            System.out.println(" "+temp);
+            m=n;
+            n=temp;
+        }
+
+    }
+
+}

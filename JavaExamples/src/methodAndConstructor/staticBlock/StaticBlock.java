@@ -1,0 +1,19 @@
+package methodAndConstructor.staticBlock;
+
+public class StaticBlock {
+
+    static{
+        System.out.println("I am static part");
+    }
+
+    public static void main(String[] args) {
+        System.out.println("I am method");
+    }
+
+}
+
+class A1{
+    A1(){
+        System.out.println("I am cnstructor");
+    }
+}
